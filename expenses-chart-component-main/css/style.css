@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body {
+   font-size: 18px;
+   background-color: hsl(27, 66%, 92%);
+   font-family: 'DM Sans', sans-serif;
+}
+
+
+.wrapper {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+
+.header {
+   width: 90%;
+   padding: 25px;
+   margin: 0 0 20px 20px;
+   background-color: hsl(10, 79%, 65%);
+   border-radius: 10px;
+   display: flex;
+   justify-content: space-around;
+}
+
+
+.balance {
+   transform: translateX(-43px);
+}
+
+
+.header h4 {
+   color: hsl(33, 100%, 98%);
+   padding-bottom: 5px;
+}
+
+
+.header h3 {
+   color: hsl(33, 100%, 98%);
+   font-weight: 700;
+   font-size: 30px;
+}
+
+
+.circle {
+   width: 10px;
+   height: 10px;
+   padding: 25px;
+   position: relative;
+   transform: translate(40px, 10px);
+   background-color: hsl(25, 47%, 15%);
+   border-radius: 100%;
+}
+
+
+.circle::after {
+   content: '';
+   position: absolute;
+   padding: 25px;
+   top: 0;
+   left: 0;
+   transform: translate(-30px, -2px);
+   border: 2px solid hsl(33, 100%, 98%);
+   border-radius: 100%;
+}
+
+
+.container {
+   width: 90%;
+   padding-bottom: 20px;
+   margin-left: 20px;
+   background-color: hsl(33, 100%, 98%);
+   border-radius: 10px;
+}
+
+
+.container h3.title {
+   font-weight: 700;
+   color: hsl(25, 47%, 15%);
+   text-align: center;
+   font-size: 20px;
+   padding-top: 30px;
+}
+
+
+.chart__component {
+   display: flex;
+   padding: 0 10px 0 15px;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.chart {
+   display: inline-block;
+   width: 100px;
+   height: 150px;
+   margin-right: 20px;
+   padding-left: 5px;
+   position: relative;
+   text-align: center;
+   font-size: 14px;
+}
+
+
+/*Tooltip*/
+.chart:hover::before {
+  content: attr(data-amount);
+  position: absolute;
+  top: -30px;
+  margin-top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsl(25, 47%, 15%);
+  color: #fff;
+  padding: 5px; 
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+
+.bar {
+   background-color: hsl(10, 79%, 65%);
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   padding: 3px;
+   border-top-left-radius: 3px;
+   border-top-right-radius: 3px;
+   cursor: pointer;
+}
+
+
+.day-label {
+   position: absolute;
+   bottom: -20px;
+   left: 0;
+   width: 100%;
+   padding-left: 8px;
+   text-align: center;
+   font-weight: bold;
+}
+
+
+hr {
+   width: 90%;
+   transform: translate(20px,40px);
+   /*background-color: hsl(27, 66%, 92%);*/
+   border: 1px solid hsl(27, 66%, 92%);
+}
+
+
+.amount {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 80px;
+}
+
+
+.all__month {
+   padding-left: 25px;
+}
+
+
+.all__month h3, .last__month h3 {
+   font-size: 15px;
+   font-weight: 700;
+   color: hsl(28, 10%, 53%);
+}
+
+
+.all__month p {
+   font-weight: 700;
+   font-size: 30px;
+   color: hsl(25, 47%, 15%);
+   padding: 5px 0;
+}
+
+
+.last__month {
+   padding-right: 25px;
+   transform: translateY(15px);
+}
+
+
+.last__month p {
+   font-weight: 700;
+   color: hsl(25, 47%, 15%);
+   text-align: right;
+}
+
+
+.attribution {
+   font-size: 15px;
+   text-align: center;
+}
+
+
+.attribution a {
+   display: inline-block;
+   font-weight: 700;
+   color: hsl(25, 47%, 15%);
+   text-decoration: none;
+}
+
+
+/* Responsive */
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+   
+   
+   .header {
+      width: 40%;
+   }
+   
+   
+   .container {
+      width: 40%;
+   }
+   
+   
+   .wrapper {
+      align-items: center;
+   }
+   
+   
+} 

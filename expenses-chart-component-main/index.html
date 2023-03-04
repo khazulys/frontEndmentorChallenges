@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+
+
+   
+   <div class="wrapper">
+      <div class="header">
+         <div class="balance">
+            <h4>My balance</h4>
+            <h3>$921.48</h3>
+         </div>
+         <div class="circle"></div>
+      </div>
+      
+      <!-- Container -->
+      <div class="container">
+         <h3 class="title">Spending - Last 7 days</h3>
+         <div class="chart__component">
+            <div class="chart" data-amount="$17.45">
+               <div class="bar"></div>
+               <div class="day-label">mon</div>
+            </div>
+            <div class="chart" data-amount="$34.91">
+               <div class="bar"></div>
+               <div class="day-label">tue</div>
+            </div>
+            <div class="chart" data-amount="$52.36">
+               <div class="bar" style="background-color: hsl(186, 34%, 60%);"></div>
+               <div class="day-label">wed</div>
+            </div>
+            <div class="chart" data-amount="$31.07">
+               <div class="bar"></div>
+               <div class="day-label">thu</div>
+            </div>
+            <div class="chart" data-amount="$23.39">
+               <div class="bar"></div>
+               <div class="day-label">fri</div>
+            </div>
+            <div class="chart" data-amount="$43.28">
+               <div class="bar"></div>
+               <div class="day-label">sat</div>
+            </div>
+            <div class="chart" data-amount="$25.48">
+               <div class="bar"></div>
+               <div class="day-label">sun</div>
+            </div>
+         </div>
+         <hr>
+         <div class="amount">
+            <div class="all__month">
+               <h3>Total this month</h3>
+               <p>$478.33</p>
+            </div>
+
+            <div class="last__month">
+               <p>+2.4%</p>
+               <h3>from last month</h3>
+            </div>
+         </div>
+      </div>
+      <!-- Akhir container -->
+   </div>
+
+   <!-- Akhir Wrap -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/khazulys" target="_blank">khazulys</a>.
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
