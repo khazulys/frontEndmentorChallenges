@@ -36,7 +36,8 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS Grid
 
-#html
+
+## HTML
 ```html
 <main>
     <div class="card">
