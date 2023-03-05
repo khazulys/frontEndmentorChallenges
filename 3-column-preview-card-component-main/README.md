@@ -66,5 +66,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Khazulys](https://www.khazulys.netlify.app)
+- Website - [Khazulys](https://khazulys.netlify.app)
 - Frontend Mentor - [@khazulys](https://www.frontendmentor.io/profile/khazulys)
