@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+   box-sizing: border-box;
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 15px;
+   font-weight: 400;
+   background-color: #fffffe;
+}
+main {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   justify-items: center;
+   align-items: center;
+   margin: 8rem 0;
+}
+
+.card {
+   width: 350px;
+   padding-bottom: 50px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.card:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card img {
+   margin: 40px 0 0 40px;
+}
+.card h2 {
+   margin-left: 40px;
+   font-family: 'Big Shoulders Display', cursive;
+   font-weight: 700;
+   color: #fffffe;
+   font-size: 40px;
+   text-transform: uppercase;
+}
+.card p {
+   margin-left: 40px;
+   width: 80%;
+   color: #fffffe;
+}
+.card a {
+   display: block;
+   margin-left: 40px;
+   margin-top: 40px;
+   text-decoration: none;
+   /*color: hsl(31, 77%, 52%);*/
+   width: 30%;
+   padding: 15px;
+   background-color: #fffffe;
+   border-radius: 50px;
+   text-align: center;
+   cursor: pointer
+   outline: none;
+}
+.card:nth-child(1) a {
+   color: hsl(31, 77%, 52%);
+}
+.card:nth-child(2) a {
+   color: hsl(184, 100%, 22%);
+}
+.card:nth-child(3) a {
+   color: hsl(179, 100%, 13%);
+}
+.card a:hover {
+   border: 2px solid #fffffe;
+   color: #fffffe;
+   background-color: transparent;
+   transition: 0.1s ease-in-out;
+}
+footer {
+   text-align: center;
+}
+footer a {
+   text-decoration: none;
+   font-family: 'Big Shoulders Display', cursive;
+   color: hsl(184, 100%, 22%);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+   main {
+     margin-left: 50px;
+     margin-right: 50px;
+     margin-top: 0;
+     height: 100vh;
+   }
+   .card {
+      width: 100%;
+   }
+   .card p {
+      width: 70%;
+   }
+   .card a {
+      margin: 70px 0 0 40px;
+   }
+   .card:nth-child(1) {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 10px;
+   }
+   .card:nth-child(3) {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 10px;
+   }
+}
