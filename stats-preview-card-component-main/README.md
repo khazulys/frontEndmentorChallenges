@@ -9,7 +9,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Links
 
-- live site: [Demo](https://3-column-preview-khazulys.vercel.app/)
+- Demo site: [Demo](https://3-column-preview-khazulys.vercel.app/)
 
 
 ## Author
