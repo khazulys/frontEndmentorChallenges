@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-size: 15px;
+   background-color: hsl(233, 47%, 7%);
+   color: #fff;
+   font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+}
+
+.card {
+   width: 350px;
+   background-color: hsl(244, 38%, 16%);
+}
+
+.card:nth-child(1) {
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+}
+
+.card:nth-child(2) {
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+
+.card > .hero-image {
+   min-height: 250px;
+   background-image: url('images/image-header-mobile.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+}
+
+.card > .hero-image::before {
+   content: '';
+   width: 350px;
+   min-height: 250px;
+   position: absolute;
+   background-color: #6F1AB6;
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+   /*transform: translateX(0px);*/
+   opacity: 65%;
+}
+
+.card h1 {
+   font-family: 'Inter', sans-serif;
+   padding: 20px;
+   margin: 10px;
+   font-weight: 700;
+   text-align: center;
+   color: hsl(0, 0%, 100%);
+}
+
+.card h1 span {
+   color: hsl(277, 64%, 61%);
+}
+
+.card p {
+   text-align: center;
+   color: hsla(0, 0%, 100%, 0.75);
+   width: 80%;
+   margin: 0 30px 30px 30px;
+}
+
+.card h3 {
+   text-align: center;
+   color: hsl(0, 0%, 100%);
+   font-family: 'Inter', sans-serif;
+   font-weight: 700;
+   font-size: 25px;
+}
+.card > .stats-content p {
+   text-transform: uppercase;
+   color: hsla(0, 0%, 100%, 0.6);
+}
+
+
+/* Footer */
+footer {
+   text-align: center;
+}
+
+footer a {
+   text-decoration: none;
+   color: #fffffe;
+}
+/* Responsive */
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+   .container {
+      flex-direction: row-reverse;
+   } 
+   
+   .card {
+      width: 400px;
+      height: 350px;
+      padding: 20px 0 40px 0;
+   }
+   
+   .card:nth-child(1) {
+      border-bottom-right-radius: 10px;
+   }
+   .card:nth-child(2) {
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 10px;
+   }
+   .card > .stats-content {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 0 0 20px;
+      transform: translateY(30px);
+      font-size: 12px;
+   }
+   
+   .card h1 {
+      text-align: left;
+      margin-left: 30px;
+   }
+   
+   .card p {
+      text-align: left;
+      width: 80%;
+      transform: translateX(25px);
+   }
+   
+   .card > .hero-image {
+      width: 350px;
+      height: 350.3px;
+      transform: translate(50px,-20.2px);
+      background-image: url('images/image-header-desktop.jpg');
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 10px;
+   }
+   
+   .card > .hero-image::before {
+      content: '';
+      width: 350px;
+      height: 350.3px;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 10px;
+   }
+   .card > .stats-content h3 {
+      text-align: left;
+      padding-left: 35px;
+      font-size: 20px;
+   }
+   
+   .card > .stats-content p {
+      transform: translateX(-15px);
+      text-align: center;
+   }
+   
+}
