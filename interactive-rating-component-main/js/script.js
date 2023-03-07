@@ -1,5 +1,5 @@
-let ratingCard = document.getElementById('rating-card');
-let thanksCard = document.getElementById('thanks-card');
+let ratingCard = document.getElementById('card__rating');
+let thanksCard = document.getElementById('card__thank--you');
 let selectedNumber = null;
 
 function selectNumber(number) {
