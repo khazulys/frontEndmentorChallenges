@@ -8,7 +8,7 @@ if (selectedNumber !== null) {
 	document.getElementById("button" + selectedNumber).classList.remove("active");
 }
 
-			// Set the selected number and add the active class to the selected button
+// Set the selected number and add the active class to the selected button
 selectedNumber = number;
 	document.getElementById("button" + selectedNumber).classList.add("active");
 }
