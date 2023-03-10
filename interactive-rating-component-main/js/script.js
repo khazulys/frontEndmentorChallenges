@@ -1,5 +1,5 @@
-let ratingCard = document.getElementById('rating-card');
-let thanksCard = document.getElementById('thanks-card');
+let ratingCard = document.getElementById('card__rating');
+let thanksCard = document.getElementById('card__thank--you');
 let selectedNumber = null;
 
 function selectNumber(number) {
@@ -8,7 +8,7 @@ if (selectedNumber !== null) {
 	document.getElementById("button" + selectedNumber).classList.remove("active");
 }
 
-			// Set the selected number and add the active class to the selected button
+// Set the selected number and add the active class to the selected button
 selectedNumber = number;
 	document.getElementById("button" + selectedNumber).classList.add("active");
 }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
 * {
   margin: 0; /*Set the margin to 0 on each HTML element*/
   padding: 0; /*Set the padding to 0 on each HTML element*/
@@ -32,14 +33,14 @@ body {
   color: #fffffe;
 }
 
-#thanks-card {
+#card__thank--you {
   display: none;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-#rating-card > .logo {
+#card__rating > .logo {
   width: 45px;
   height: 45px;
   margin: 20px 0 0 20px;
@@ -51,11 +52,11 @@ body {
   box-shadow: 0 0 10px 0 hsl(216, 12%, 8%);
 }
 
-#thanks-card > .logo {
+#card__thank--you > .logo {
   margin-top: 30px;
 }
 
-.rating-count {
+.rating__count {
   width: 200px;
   margin-top: 30px;
   background-color: hsl(213, 19%, 18%);
@@ -63,34 +64,29 @@ body {
   border-radius: 50px;
 }
 
-.star-logo img {
-  display: block;
-  margin: auto;
-}
-
-.card h1 {
+h1.heading__content {
   font-size: 25px;
   margin: 20px 0 0 20px;
   color: hsl(0, 0%, 100%);
   font-weight: 700;
 }
 
-h1.thanks {
+h1.heading__for--thanks {
   margin-top: 30px;
 }
 
-.card p.sub-heading {
+p.sub__content {
   width: 85%;
   margin: 20px;
   color: hsl(217, 12%, 63%);
 }
 
-.rating-count p.count__given {
+p.count__given {
   padding: 5px;
   color: hsl(25, 97%, 53%);
   text-align: center;
 }
-p.sub-thanks {
+p.thanks__content {
   width: 80%;
   margin: 20px 0 30px 0;
   color: hsl(217, 12%, 63%);
@@ -102,9 +98,7 @@ ul {
   display: flex;
   justify-content: space-evenly;
 }
-/*li {
-  padding: 0 0 0 30px;
-}*/
+
 li button {
   width: 45px;
   height: 45px;
@@ -122,7 +116,7 @@ li button:hover {
   color: #fffffe;
 }
 
-#btnsubmit {
+#submit--button {
   width: 300px;
   margin: 30px 20px 30px 25px;
   padding: 15px;
@@ -136,7 +130,7 @@ li button:hover {
   background-color: hsl(25, 97%, 53%);
 }
 
-#btnsubmit:hover {
+#submit--button:hover {
   background-color: #fffffe;
   color: hsl(25, 97%, 53%);
 }

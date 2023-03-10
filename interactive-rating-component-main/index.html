@@ -4,58 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Interactive Rating</title>
 </head>
 <body>
-  <div class="container">
-    <div class="card" id="rating-card">
-      <div class="logo">
-        <img src="images/icon-star.svg" alt="star">
+  <main>
+    <div class="container">
+      <!--rating card-->
+      <div class="card" id="card__rating">     
+        <div class="logo">
+          <img src="images/icon-star.svg" alt="star">
+        </div>
+        
+        <h1 class="heading__content">How died we do?</h1>
+        <p class="sub__content">
+          Please let us know how we did with your support request.
+          All feedback is appreciated to help us improve
+          our overing!
+        </p>
+          
+        <div class="rating__buttons">
+          <ul>
+            <li><button onclick="selectNumber(1)" id="button1">1</button></li>
+            <li><button onclick="selectNumber(2)" id="button2">2</button></li>
+            <li><button onclick="selectNumber(3)" id="button3">3</button></li>
+            <li><button onclick="selectNumber(4)" id="button4">4</button></li>
+            <li><button onclick="selectNumber(5)" id="button5">5</button5></li>
+          </ul>
+        </div>
+        
+        <button type="submit" id="submit--button" onclick="submitSelection()">submit</button>
       </div>
-      <h1 class="heading">
-        How died we do?
-      </h1>
-      <p class="sub-heading">
-        Please let us know how we did with your support request.
-        All feedback is appreciated to help us improve
-        our overing!
-      </p>
-      <div class="rating-buttons">
-        <ul>
-          <li><button onclick="selectNumber(1)" id="button1">1</button></li>
-          <li><button onclick="selectNumber(2)" id="button2">2</button></li>
-          <li><button onclick="selectNumber(3)" id="button3">3</button></li>
-          <li><button onclick="selectNumber(4)" id="button4">4</button></li>
-          <li><button onclick="selectNumber(5)" id="button5">5</button5></li>
-        </ul>
-      </div>
-      <button type="submit" id="btnsubmit" onclick="submitSelection()">submit</button>
-    </div>
-    <div class="card" id="thanks-card">
-      <div class="logo">
-        <img src="images/illustration-thank-you.svg" alt="">
-      </div>
-      <div class="rating-count">
-        <p class="count__given">
-          You selected <span id="output"></span> out of 5
+      
+      <!--thank you card-->
+      <div class="card" id="card__thank--you">
+        <div class="logo">
+          <img src="images/illustration-thank-you.svg" alt="">
+        </div>
+        
+        <div class="rating__count">
+          <p class="count__given">You selected <span id="output"></span> out of 5</p>
+        </div>
+        
+        <h1 class="heading__for--thanks">Thank you!</h1>
+        <p class="thanks__content">
+          We appreciate you taking the time to give
+          a rating. if you ever need more support,
+          don't hesitate to get in touch!
         </p>
       </div>
-      <h1 class="thanks">Thank you!</h1>
-      <p class="sub-thanks">
-        We appreciate you taking the time to give
-        a rating. if you ever need more support,
-        don't hesitate to get in touch!
-      </p>
     </div>
-  </div>
-
+  </main>
+  
   <footer>
     <p>
-      <a href="#">Source Code</a> | <a href="https://khazulys.netlify.app" target="_blank">Khazulys</a>
+      <a href="https://github.com/khazulys/frontEndmentorChallenges/tree/master/interactive-rating-component-main" target="_blank">Source Code</a> | <a href="https://khazulys.netlify.app" target="_blank">Khazulys</a>
     </p>
   </footer>
-  <script src="script.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
